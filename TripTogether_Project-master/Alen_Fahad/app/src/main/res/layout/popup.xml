@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/newlisticon"
+        android:layout_width="355dp"
+        android:layout_height="492dp"
+        android:background="@drawable/ic_baseline_commute_2422"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19" />
+
+    <EditText
+        android:id="@+id/toCity"
+        android:layout_width="266dp"
+        android:layout_height="57dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="to City"
+        android:textColor="@color/text_hint_color"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/newlisticon"
+        app:layout_constraintEnd_toEndOf="@+id/newlisticon"
+        app:layout_constraintHorizontal_bias="0.604"
+        app:layout_constraintStart_toStartOf="@+id/newlisticon"
+        app:layout_constraintTop_toTopOf="@+id/newlisticon"
+        app:layout_constraintVertical_bias="0.106" />
+
+    <EditText
+        android:id="@+id/fromCity"
+        android:layout_width="266dp"
+        android:layout_height="57dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="from City"
+        android:textColor="@color/text_hint_color"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/newlisticon"
+        app:layout_constraintEnd_toEndOf="@+id/newlisticon"
+        app:layout_constraintHorizontal_bias="0.604"
+        app:layout_constraintStart_toStartOf="@+id/newlisticon"
+        app:layout_constraintTop_toBottomOf="@+id/toCity"
+        app:layout_constraintVertical_bias="0.068" />
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="266dp"
+        android:layout_height="57dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="date (01/01)"
+        android:textColor="@color/text_hint_color"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/newlisticon"
+        app:layout_constraintEnd_toEndOf="@+id/newlisticon"
+        app:layout_constraintHorizontal_bias="0.604"
+        app:layout_constraintStart_toStartOf="@+id/newlisticon"
+        app:layout_constraintTop_toBottomOf="@+id/fromCity"
+        app:layout_constraintVertical_bias="0.068" />
+
+    <EditText
+        android:id="@+id/time"
+        android:layout_width="266dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="time (01:00)"
+        android:textColor="@color/text_hint_color"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/newlisticon"
+        app:layout_constraintEnd_toEndOf="@+id/newlisticon"
+        app:layout_constraintHorizontal_bias="0.604"
+        app:layout_constraintStart_toStartOf="@+id/newlisticon"
+        app:layout_constraintTop_toBottomOf="@+id/date"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/addTripButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="36dp"
+        android:background="@drawable/ic_baseline_add_24"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/newlisticon"
+        app:layout_constraintEnd_toEndOf="@+id/newlisticon"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="@+id/newlisticon"
+        app:layout_constraintTop_toBottomOf="@+id/time"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/ic_baseline_clear_24"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/newlisticon"
+        app:layout_constraintEnd_toEndOf="@+id/newlisticon"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="@+id/newlisticon"
+        app:layout_constraintTop_toBottomOf="@+id/time"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/deleteTripsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_baseline_indeterminate_check_box_24"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toBottomOf="@+id/newlisticon"
+        app:layout_constraintEnd_toEndOf="@+id/newlisticon"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/newlisticon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.081" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
