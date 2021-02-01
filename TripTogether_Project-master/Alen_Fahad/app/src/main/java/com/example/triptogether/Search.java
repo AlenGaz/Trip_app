@@ -53,7 +53,7 @@ public class Search extends AppCompatActivity {
 
         FirebaseRecyclerOptions<model> options =
                 new FirebaseRecyclerOptions.Builder<model>()
-                        .setQuery(FirebaseDatabase.getInstance().getReference().child("users").orderByChild("name").startAt(">"), model.class)
+                        .setQuery(FirebaseDatabase.getInstance().getReference().child("users").orderByChild("name").startAt("-"), model.class)
                        .build();
 
         adapter=new myadapter(options);
@@ -102,7 +102,7 @@ public class Search extends AppCompatActivity {
     {
         FirebaseRecyclerOptions<model> options =
                 new FirebaseRecyclerOptions.Builder<model>()
-                        .setQuery(FirebaseDatabase.getInstance().getReference().child("users").orderByChild("trips").startAt("> " + s).endAt(s+"\uf8ff"), model.class)
+                        .setQuery(FirebaseDatabase.getInstance().getReference().child("users").orderByChild("trips").startAt("-").endAt(s+"\uf8ff"), model.class)
                         .build();
 
         adapter=new myadapter(options);
@@ -204,7 +204,7 @@ public class Search extends AppCompatActivity {
             public void onClick(View v) {
                 //define savebutton here
 
-                String fromto = "> " + toCity.getText().toString() + " to " + fromCity.getText().toString();
+                String fromto = "-" + toCity.getText().toString() + " to " + fromCity.getText().toString();
                 String dateTrip = date.getText().toString() ;
                 String timeTrip = time.getText().toString();
 
@@ -216,7 +216,7 @@ public class Search extends AppCompatActivity {
                 myRef.setValue(fromto);
 
                 DatabaseReference myRef1 = db.getReference("users").child(UserDetails.username).child("course");
-                myRef1.setValue(dateTrip + "at time:" + timeTrip);
+                myRef1.setValue(dateTrip + ", at time: " + timeTrip);
 
                 DatabaseReference myRef2 = db.getReference("users").child(UserDetails.username).child("email");
                 myRef2.setValue(UserDetails.username);

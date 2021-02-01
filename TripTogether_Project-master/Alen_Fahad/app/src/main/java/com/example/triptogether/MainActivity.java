@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         profileDesc = findViewById(R.id.profileDescription);
         profileDescContent = profileDesc.getText().toString();
         profileDescContent =  db.getReference("users").child(UserDetails.username).child("description").toString();
-        //profileDesc.setText(profileDescContent);
+        profileDesc.setText(profileDescContent);
 
 
         Firebase.setAndroidContext(this);
@@ -137,27 +137,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-
-            case R.id.item1:
-                Toast.makeText(this, "Item 1 selected", Toast.LENGTH_SHORT).show();
-
-                return true;
-
             case R.id.item2:
                 Toast.makeText(this, "Logging out", Toast.LENGTH_SHORT).show();
                 Intent i = new Intent(this, Login.class);
                 startActivity(i);
                 finish();
-                return true;
-
-            case R.id.item3:
-                Toast.makeText(this, "Item 3 selected", Toast.LENGTH_SHORT).show();
-                return true;
-            case R.id.subitem1:
-                Toast.makeText(this, "Sub Item 1 selected", Toast.LENGTH_SHORT).show();
-                return true;
-            case R.id.subitem2:
-                Toast.makeText(this, "Sub Item 2 selected", Toast.LENGTH_SHORT).show();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

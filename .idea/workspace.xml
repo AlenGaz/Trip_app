@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="428f948e-3046-4bab-8cc7-ba01d4c582a4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/TripTogether_Project-master/Alen_Fahad/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TripTogether_Project-master/Alen_Fahad/.idea/assetWizardSettings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TripTogether_Project-master/Alen_Fahad/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TripTogether_Project-master/Alen_Fahad/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TripTogether_Project-master/Alen_Fahad/app/src/main/java/com/example/triptogether/Chat.java" beforeDir="false" afterPath="$PROJECT_DIR$/TripTogether_Project-master/Alen_Fahad/app/src/main/java/com/example/triptogether/Chat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TripTogether_Project-master/Alen_Fahad/app/src/main/java/com/example/triptogether/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/TripTogether_Project-master/Alen_Fahad/app/src/main/java/com/example/triptogether/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TripTogether_Project-master/Alen_Fahad/app/src/main/java/com/example/triptogether/Search.java" beforeDir="false" afterPath="$PROJECT_DIR$/TripTogether_Project-master/Alen_Fahad/app/src/main/java/com/example/triptogether/Search.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TripTogether_Project-master/Alen_Fahad/app/src/main/res/layout-land/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TripTogether_Project-master/Alen_Fahad/app/src/main/res/layout-land/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TripTogether_Project-master/Alen_Fahad/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TripTogether_Project-master/Alen_Fahad/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TripTogether_Project-master/Alen_Fahad/app/src/main/res/layout/activity_register.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TripTogether_Project-master/Alen_Fahad/app/src/main/res/layout/activity_register.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TripTogether_Project-master/Alen_Fahad/app/src/main/res/layout/activity_search.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TripTogether_Project-master/Alen_Fahad/app/src/main/res/layout/activity_search.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TripTogether_Project-master/Alen_Fahad/app/src/main/res/layout/confirmuserpopup.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TripTogether_Project-master/Alen_Fahad/app/src/main/res/layout/confirmuserpopup.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TripTogether_Project-master/Alen_Fahad/app/src/main/res/layout/editdescriptionpopup.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TripTogether_Project-master/Alen_Fahad/app/src/main/res/layout/editdescriptionpopup.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TripTogether_Project-master/Alen_Fahad/app/src/main/res/layout/popup.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TripTogether_Project-master/Alen_Fahad/app/src/main/res/layout/popup.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1ntDb4TZfgXcQsn4Dprs1AICKh9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="428f948e-3046-4bab-8cc7-ba01d4c582a4" name="Default Changelist" comment="" />
+      <created>1612200561085</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1612200561085</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1612201034490">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1612201034490" />
+  </component>
+</project>

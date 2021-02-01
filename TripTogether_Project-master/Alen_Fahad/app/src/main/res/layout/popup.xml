@@ -20,62 +20,58 @@
         app:layout_constraintVertical_bias="0.19" />
 
     <EditText
-        android:id="@+id/toCity"
-        android:layout_width="266dp"
-        android:layout_height="57dp"
+        android:id="@+id/fromCity"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
         android:background="@drawable/edit_text_background"
-        android:hint="to City"
-        android:textColor="@color/text_hint_color"
+        android:hint="To City"
+        android:textColor="@color/colorAccent"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/newlisticon"
         app:layout_constraintEnd_toEndOf="@+id/newlisticon"
-        app:layout_constraintHorizontal_bias="0.604"
         app:layout_constraintStart_toStartOf="@+id/newlisticon"
         app:layout_constraintTop_toTopOf="@+id/newlisticon"
-        app:layout_constraintVertical_bias="0.106" />
+        app:layout_constraintVertical_bias="0.25" />
 
     <EditText
-        android:id="@+id/fromCity"
-        android:layout_width="266dp"
-        android:layout_height="57dp"
+        android:id="@+id/toCity"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
         android:background="@drawable/edit_text_background"
-        android:hint="from City"
-        android:textColor="@color/text_hint_color"
+        android:hint="From City"
+        android:textColor="@color/colorAccent"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/newlisticon"
         app:layout_constraintEnd_toEndOf="@+id/newlisticon"
-        app:layout_constraintHorizontal_bias="0.604"
         app:layout_constraintStart_toStartOf="@+id/newlisticon"
-        app:layout_constraintTop_toBottomOf="@+id/toCity"
-        app:layout_constraintVertical_bias="0.068" />
+        app:layout_constraintTop_toBottomOf="@+id/fromCity"
+        app:layout_constraintVertical_bias="0.04000002" />
 
     <EditText
         android:id="@+id/date"
-        android:layout_width="266dp"
-        android:layout_height="57dp"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
         android:background="@drawable/edit_text_background"
-        android:hint="date (01/01)"
-        android:textColor="@color/text_hint_color"
+        android:hint="Date (30/12)"
+        android:textColor="@color/colorAccent"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/newlisticon"
         app:layout_constraintEnd_toEndOf="@+id/newlisticon"
-        app:layout_constraintHorizontal_bias="0.604"
         app:layout_constraintStart_toStartOf="@+id/newlisticon"
         app:layout_constraintTop_toBottomOf="@+id/fromCity"
-        app:layout_constraintVertical_bias="0.068" />
+        app:layout_constraintVertical_bias="0.24000001" />
 
     <EditText
         android:id="@+id/time"
-        android:layout_width="266dp"
-        android:layout_height="57dp"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
         android:layout_marginTop="14dp"
         android:background="@drawable/edit_text_background"
-        android:hint="time (01:00)"
-        android:textColor="@color/text_hint_color"
+        android:hint="Time (01:00)"
+        android:textColor="@color/colorAccent"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/newlisticon"
         app:layout_constraintEnd_toEndOf="@+id/newlisticon"
-        app:layout_constraintHorizontal_bias="0.604"
         app:layout_constraintStart_toStartOf="@+id/newlisticon"
         app:layout_constraintTop_toBottomOf="@+id/date"
         app:layout_constraintVertical_bias="0.0" />
@@ -84,40 +80,42 @@
         android:id="@+id/addTripButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         android:layout_marginTop="36dp"
-        android:background="@drawable/ic_baseline_add_24"
+        android:background="@drawable/button_background"
         android:textSize="12sp"
+        android:text="Add trip"
         app:layout_constraintBottom_toBottomOf="@+id/newlisticon"
         app:layout_constraintEnd_toEndOf="@+id/newlisticon"
-        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintHorizontal_bias="0.868"
         app:layout_constraintStart_toStartOf="@+id/newlisticon"
         app:layout_constraintTop_toBottomOf="@+id/time"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.405" />
 
     <Button
         android:id="@+id/cancelButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
-        android:background="@drawable/ic_baseline_clear_24"
+        android:background="@drawable/button_background"
         android:textSize="12sp"
+        android:text="Cancel"
         app:layout_constraintBottom_toBottomOf="@+id/newlisticon"
         app:layout_constraintEnd_toEndOf="@+id/newlisticon"
-        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintHorizontal_bias="0.176"
         app:layout_constraintStart_toStartOf="@+id/newlisticon"
         app:layout_constraintTop_toBottomOf="@+id/time"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.405" />
 
     <Button
         android:id="@+id/deleteTripsButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/ic_baseline_indeterminate_check_box_24"
+        android:layout_width="107dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_background"
         android:onClick="onClick"
+        android:text="Delete trips"
         app:layout_constraintBottom_toBottomOf="@+id/newlisticon"
         app:layout_constraintEnd_toEndOf="@+id/newlisticon"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.96"
         app:layout_constraintStart_toStartOf="@+id/newlisticon"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.081" />
