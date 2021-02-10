@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ListView;
 import android.widget.SearchView;
 
 import com.google.firebase.database.DatabaseReference;
@@ -30,6 +32,8 @@ import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
+import java.util.ArrayList;
+
 
 public class Search extends AppCompatActivity {
 
@@ -42,23 +46,41 @@ public class Search extends AppCompatActivity {
     private Button addTrip, cancel,deleteTrips, submitUsername;
     public String gotUser;
 
+    ArrayList<String> alist = new ArrayList<>();
+    int totaleUsers = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
         setTitle("");
 
-        recview=(RecyclerView)findViewById(R.id.recview);
+        recview= (RecyclerView) findViewById(R.id.recview);
+
+
+
+
         recview.setLayoutManager(new LinearLayoutManager(this));
 
         FirebaseRecyclerOptions<model> options =
                 new FirebaseRecyclerOptions.Builder<model>()
-                        .setQuery(FirebaseDatabase.getInstance().getReference().child("users").orderByChild("name").startAt("-"), model.class)
-                       .build();
+                        .setQuery(FirebaseDatabase.getInstance().getReference().child("users").orderByChild("name").startAt("from "), model.class)
+                        .build();
 
         adapter=new myadapter(options);
         recview.setAdapter(adapter);
+
+        recview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Log.d("KOSKESHKURWA", String.valueOf(recview.getChildItemId(v)));
+                recview.getChildItemId(v);
+            }
+        });
     }
+
+
 
     @Override
     protected void onStart() {
@@ -101,8 +123,8 @@ public class Search extends AppCompatActivity {
     private void processsearch(String s)
     {
         FirebaseRecyclerOptions<model> options =
-                new FirebaseRecyclerOptions.Builder<model>()
-                        .setQuery(FirebaseDatabase.getInstance().getReference().child("users").orderByChild("trips").startAt("-").endAt(s+"\uf8ff"), model.class)
+               new FirebaseRecyclerOptions.Builder<model>()
+                        .setQuery(FirebaseDatabase.getInstance().getReference().child("users").orderByChild("trips").startAt("").endAt(s+"\uf8ff"), model.class)
                         .build();
 
         adapter=new myadapter(options);
@@ -128,16 +150,13 @@ public class Search extends AppCompatActivity {
         if (v.getId() == R.id.addButton){
             createNewTripDialog();
         }
-        if (v.getId() == R.id.button5){
-            //Intent i = new Intent(this, Chat.class);
-            //TextView helloTextView = findViewById(R.id.emailtext);
-            //helloTextView.setText("set text in hello text view");
-            //UserDetails.chatWith = "alenz";
-            tripUserPopupDialog();
+       /* if (v.getId() == R.id.button5){
 
-            //startActivity(i);
+            //tripUserPopupDialog();
+            //recview.getChildItemId(recview);
+            Log.d("KOSKESHKURWA", String.valueOf(recview.getChildItemId(v)));
 
-        }
+        }*/
     }
 
 
@@ -153,17 +172,22 @@ public class Search extends AppCompatActivity {
         dialog = dialogBuilder.create();
         dialog.show();
 
-       submitUsername = (Button) userTripPopupView.findViewById(R.id.confirmUserButton);
+        submitUsername = (Button) userTripPopupView.findViewById(R.id.confirmUserButton);
 
         submitUsername.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // define cancelbutton here
 
+
+
                 CallChatActivity(confirmUser.getText().toString());
                 dialog.dismiss();
             }
-            });
+        });
+
+
+
     }
 
     public void CallChatActivity(String uname){
@@ -177,6 +201,7 @@ public class Search extends AppCompatActivity {
     public void createNewTripDialog() { //for creating new dialog
         dialogBuilder = new AlertDialog.Builder(this);
         final View tripPopupView = getLayoutInflater().inflate(R.layout.popup, null);
+
         toCity = (EditText) tripPopupView.findViewById(R.id.toCity);
         toCity = (EditText) tripPopupView.findViewById(R.id.toCity);
         fromCity = (EditText) tripPopupView.findViewById(R.id.fromCity);
@@ -187,15 +212,14 @@ public class Search extends AppCompatActivity {
         cancel = (Button) tripPopupView.findViewById(R.id.cancelButton);
         deleteTrips = (Button) tripPopupView.findViewById(R.id.deleteTripsButton);
 
+
         dialogBuilder.setView(tripPopupView);
         dialog = dialogBuilder.create();
         dialog.show();
 
         FirebaseDatabase db = FirebaseDatabase.getInstance();
         Login loginref = new Login();
-        //Log.d("HORUNGEOGNGE", loginref.writtenuser);
-        //DatabaseReference myRef = db.getReference("trips").child(loginref.writtenuser);
-        //DatabaseReference myRef = db.getReference("users").child("AA").child("trips");
+
         DatabaseReference myRef = db.getReference("users").child(UserDetails.username).child("trips");
 
 
@@ -204,7 +228,7 @@ public class Search extends AppCompatActivity {
             public void onClick(View v) {
                 //define savebutton here
 
-                String fromto = "-" + toCity.getText().toString() + " to " + fromCity.getText().toString();
+                String fromto = "from " + toCity.getText().toString() + " to " + fromCity.getText().toString();
                 String dateTrip = date.getText().toString() ;
                 String timeTrip = time.getText().toString();
 

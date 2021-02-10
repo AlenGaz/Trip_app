@@ -25,10 +25,14 @@
 
     <ListView
         android:id="@+id/usersList"
-        android:layout_width="401dp"
-        android:layout_height="664dp"
+        android:layout_width="399dp"
+        android:layout_height="734dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="3dp">
+        app:layout_constraintVertical_bias="1.0">
 
     </ListView>
 

@@ -1,5 +1,7 @@
 package com.example.triptogether;
 
+import android.widget.Button;
+
 public class model
 {
   String trips,course,email,purl;
@@ -7,11 +9,15 @@ public class model
     {
 
     }
+
+
+
     public model(String name, String course, String email, String purl) {
         this.trips = name; // toCity
         this.course = course; //fromCity
         this.email = email; // date
         this.purl = purl; // time
+
     }
 
     public String getName() {

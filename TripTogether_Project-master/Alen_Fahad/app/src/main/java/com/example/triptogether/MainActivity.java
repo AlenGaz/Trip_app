@@ -32,6 +32,8 @@ import org.w3c.dom.Text;
 
 import java.util.Map;
 
+import static maes.tech.intentanim.CustomIntent.customType;  ///ANIMATION
+
 public class MainActivity extends AppCompatActivity {
     private AlertDialog.Builder dialogBuilder;
     private AlertDialog dialog;
@@ -52,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        customType(MainActivity.this,"right-to-left");
 
         FirebaseDatabase db = FirebaseDatabase.getInstance();
 
@@ -61,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
         profileDesc = findViewById(R.id.profileDescription);
         profileDescContent = profileDesc.getText().toString();
         profileDescContent =  db.getReference("users").child(UserDetails.username).child("description").toString();
-        profileDesc.setText(profileDescContent);
+        //profileDesc.setText(profileDescContent);
 
 
         Firebase.setAndroidContext(this);

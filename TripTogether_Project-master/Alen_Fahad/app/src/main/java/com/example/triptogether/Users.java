@@ -23,7 +23,7 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.Iterator;
-
+import static maes.tech.intentanim.CustomIntent.customType;  ///ANIMATION
 public class Users extends AppCompatActivity {
     ListView usersList;
     TextView noUsersText;
@@ -35,7 +35,7 @@ public class Users extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_users);
-
+        customType(Users.this,"up-to-bottom");
         usersList = (ListView)findViewById(R.id.usersList);
         noUsersText = (TextView)findViewById(R.id.noUsersText);
 

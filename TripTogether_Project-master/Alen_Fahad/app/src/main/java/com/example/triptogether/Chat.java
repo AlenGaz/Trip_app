@@ -154,7 +154,7 @@ public class Chat extends AppCompatActivity {
 
             profileDescContent = descriptionText.getText().toString();
             profileDescContent =  db.getReference("users").child(UserDetails.chatWith).child("description").toString();
-            descriptionText.setText(profileDescContent);
+            //descriptionText.setText(profileDescContent);
 
 
             Firebase.setAndroidContext(this);
@@ -226,10 +226,12 @@ public class Chat extends AppCompatActivity {
         if(type == 1) {
             lp2.gravity = Gravity.LEFT;
             textView.setBackgroundResource(R.drawable.bubble_in);
+            textView.setTextSize(21);
         }
         else{
             lp2.gravity = Gravity.RIGHT;
             textView.setBackgroundResource(R.drawable.bubble_out);
+            textView.setTextSize(21);
         }
         textView.setLayoutParams(lp2);
         layout.addView(textView);

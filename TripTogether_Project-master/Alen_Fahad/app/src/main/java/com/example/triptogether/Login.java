@@ -18,6 +18,7 @@ import com.example.triptogether.databinding.ActivityLoginBinding;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+import static maes.tech.intentanim.CustomIntent.customType;
 
 public class Login extends AppCompatActivity {
 
@@ -36,6 +37,7 @@ public class Login extends AppCompatActivity {
 
         binding.register.setOnClickListener(v ->
                 startActivity(new Intent(Login.this, Register.class)));
+        customType(Login.this,"bottom-to-up");
 
         binding.loginButton.setOnClickListener(v -> {
             user = binding.username.getText().toString();
