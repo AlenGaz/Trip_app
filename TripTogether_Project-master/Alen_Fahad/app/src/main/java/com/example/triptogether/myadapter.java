@@ -64,15 +64,7 @@ public class myadapter extends FirebaseRecyclerAdapter<model,myadapter.myviewhol
 
     public void onClick(View v) {
         if (v.getId() == R.id.button5){
-            //Intent i = new Intent(this, Chat.class);
-            //TextView helloTextView = findViewById(R.id.emailtext);
-            //helloTextView.setText("set text in hello text view");
-            //UserDetails.chatWith = "alenz";
-            Log.d("HA K", String.valueOf(rv_list_frames.getChildPosition(v)));
-
-
-            //startActivity(i);
-
+    
         }
     }
 
@@ -107,8 +99,7 @@ public class myadapter extends FirebaseRecyclerAdapter<model,myadapter.myviewhol
                 @Override
                 public void onClick(View v) {
                     String userLocalText;
-                    Log.d("demo userOnclick:", email.getText().toString());
-                    System.out.println("HARAILALI_HARAILALO");
+      
                     userLocalText = email.getText().toString();
 
                     UserDetails.chatWith=userLocalText;
