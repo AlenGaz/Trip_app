@@ -54,7 +54,7 @@ public class myadapter extends FirebaseRecyclerAdapter<model,myadapter.myviewhol
             @Override
             public void onClick(View view) {
                 if (view.getId() == R.id.button5) {
-                    Log.d("HA TY KURWO", "KOSKESH");
+
                 }
 
             }
