@@ -150,13 +150,7 @@ public class Search extends AppCompatActivity {
         if (v.getId() == R.id.addButton){
             createNewTripDialog();
         }
-       /* if (v.getId() == R.id.button5){
 
-            //tripUserPopupDialog();
-            //recview.getChildItemId(recview);
-            Log.d("KOSKESHKURWA", String.valueOf(recview.getChildItemId(v)));
-
-        }*/
     }
 
 
